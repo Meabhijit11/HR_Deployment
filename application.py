@@ -40,7 +40,7 @@ def gfg():
         JobRole = request.form.get("JobRole")
         MaritalStatus = request.form.get("MaritalStatus")
         OverTime = request.form.get("OverTime")
-        filename = r'HR_Attrition_2.pkl'
+        filename = 'hr_attrition.pk'
         loaded_model = pk.load(open(filename, 'rb'))
         if Department == "Research & Development":
             REDEV = 1
@@ -181,6 +181,6 @@ def gfg():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
 
 # int(np(predictionresult[0]))
